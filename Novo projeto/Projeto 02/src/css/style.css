@@ -1,3 +1,40 @@
 body {
-    background-image:;
+    padding: 50px;
+    background-image: url(https://raw.githubusercontent.com/Freitas-MA/Estudos-Front-End/7a53872475ee88bbb97cd63d7458df5da6e16770/Novo%20projeto/Projeto%2002/src/image/fundo.png);
+}
+body .capa img {
+    justify-items: center;
+    width: 87vw;
+}
+body .content {
+    background-color: antiquewhite;
+    width: 87vw;
+}
+.menu ul {
+    background-color: beige;
+    width: 87vw;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.menu ul li {
+    border: 0px 5px;
+    border-style: none groove;
+}
+.content .titulo { 
+    padding: 30px 0px;
+    font-weight: bold;
+    font-size: 32px;
+}
+div .texto {
+    text-align: justify;
+    font-weight: 300;
+    font-size: 22px;
+    padding: 30px 0px;
+}
+.botton h3 {
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    padding: 25px;
 }

@@ -1,10 +1,13 @@
 body {
+    background-color: aliceblue;
     padding: 7px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .cabecalho {
     background-color: rgb(255, 227, 45);
     width: 100vw;
-    height: 80px;
+    height: 90px;
+    padding: 0px 0px 10px 0px;
     }
 #titulo {
     display: flex;
@@ -15,6 +18,12 @@ body {
     font-weight: bold;
     text-decoration: aliceblue;
 }
+.branco {
+    color: white;
+}
+.gray {
+    color: rgb(58, 56, 56);
+}
 .cabecalho .menu {
     display: flex;
     align-items: center;
@@ -22,12 +31,12 @@ body {
     font-weight: bold;
 }
 .cabecalho .menu a {
-    width: 100vw;
     padding: 0px 20px;
-    text-decoration: aliceblue;
+    color: white;
+    font-size: 20px;
 }
 .content {
-    background-color: antiquewhite;
+    
     margin: 10px 4px;
     display: flex;
     justify-content:space-around;
@@ -43,23 +52,31 @@ body {
     width: 420px;
 }
 div .pub {
-    background-color: gray;
     width: 30%;
     display: block;
     justify-content: center;
 }
 .pub div {
-    background-color: rgb(201, 201, 201);
+    padding: 10px 0px;
     margin: 7px;
+    background-color: rgb(255, 255, 255);
 }
 .pub .titulo-pub {
+    background-color: gray;
     font-size: 19px;
     font-weight: 700;
+    padding: 5px;
 }
 .pub div a {
     display: block;
     justify-items: center;
 }
-div .botton {
-    display: ;
+.botton h3 {
+    display: flex;
+    justify-content: center;
+}
+.botton p {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
 }

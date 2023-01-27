@@ -1,11 +1,65 @@
+body {
+    padding: 7px;
+}
 .cabecalho {
     background-color: rgb(255, 227, 45);
     width: 100vw;
-    height: 80px
-    
-}
-.cabecalho .titulo {
+    height: 80px;
+    }
+#titulo {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: aliceblue;
+}
+.cabecalho .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.cabecalho .menu a {
     width: 100vw;
-    padding: 45px;
+    padding: 0px 20px;
+    text-decoration: aliceblue;
+}
+.content {
+    background-color: antiquewhite;
+    margin: 10px 4px;
+    display: flex;
+    justify-content:space-around;
+}
+.content .noticia {
+    background-color: rgb(255, 255, 255);
+    margin: 2px;
+    padding: 15px;
+    text-align: justify;
+    width: 60%;
+}
+.content .noticia img {
+    width: 420px;
+}
+div .pub {
+    background-color: gray;
+    width: 30%;
+    display: block;
+    justify-content: center;
+}
+.pub div {
+    background-color: rgb(201, 201, 201);
+    margin: 7px;
+}
+.pub .titulo-pub {
+    font-size: 19px;
+    font-weight: 700;
+}
+.pub div a {
+    display: block;
+    justify-items: center;
+}
+div .botton {
+    display: ;
 }

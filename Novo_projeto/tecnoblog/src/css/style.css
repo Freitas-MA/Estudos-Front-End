@@ -4,7 +4,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 .cabecalho {
-    background-color: rgb(255, 227, 45);
+    background-color: rgb(231, 205, 38);
     width: 100vw;
     height: 90px;
     padding: 0px 0px 10px 0px;
@@ -30,6 +30,13 @@ body {
     justify-content: center;
     font-weight: bold;
 }
+/* a:link, a:visited {
+    color: white;
+}
+a:hover {
+    color: rgb(231, 205, 38;
+    background-color: white;
+} */
 .cabecalho .menu a {
     padding: 0px 20px;
     color: white;
@@ -45,8 +52,11 @@ body {
     background-color: rgb(255, 255, 255);
     margin: 2px;
     padding: 15px;
-    text-align: justify;
     width: 60%;
+}
+.content .noticia .text {
+    text-align: justify;
+    width: 95%;
 }
 .content .noticia img {
     width: 420px;

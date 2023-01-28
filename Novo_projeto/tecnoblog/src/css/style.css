@@ -43,12 +43,14 @@ a:hover {
     font-size: 20px;
 }
 .content {
-    
     margin: 10px 4px;
-    display: flex;
     justify-content:space-around;
 }
+.content .bloco-noticias {
+    display: block;
+}
 .content .noticia {
+    display: block
     background-color: rgb(255, 255, 255);
     margin: 2px;
     padding: 15px;
@@ -62,6 +64,7 @@ a:hover {
     width: 420px;
 }
 div .pub {
+    position: fixed right;
     width: 30%;
     display: block;
     justify-content: center;

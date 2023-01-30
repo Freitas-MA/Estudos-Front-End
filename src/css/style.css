@@ -77,16 +77,20 @@ body img {
     justify-content: space-around;
 }
 
-.container {
+#container li {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
+    justify-content: center;
     font-size: 3em;
-    padding: 15px;
+    
   }
-.container li {
-    background: rgba(87, 86, 86, 0.8);
-    backdrop-filter: saturate(180%) blur(360px);
+#container li {
     margin: 25px;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }

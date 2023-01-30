@@ -11,6 +11,7 @@
 }
 #titulo {
     font-size: 2.5em;
+    font-weight: bold;
 }
 .gray {
     color: gray;
@@ -84,6 +85,7 @@ a:hover {
     margin: 10px 0px;
 }
 .titulo-pub {
+    background-color: rgb(166, 164, 164);
     font-size: 1.5em;
     font-weight: 400;
 }
@@ -97,6 +99,12 @@ a:hover {
 }
 .content-pub a {
     margin: 3px 0px 3px 0px;
+}
+.content-pub a:hover {
+	color: #f7b600;
+	background: #FFF;
+	text-decoration: none;
+    border-radius: 10px 0px;
 }
 .botton h3{
     width: 100%;

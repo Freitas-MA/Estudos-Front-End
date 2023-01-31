@@ -46,7 +46,12 @@ html, body, div, span, applet, object, iframe,
             }
 /* Reset all */
 
+body {
+    width: 100%;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 1.5;
 
+}
 #background{
     position: absolute;
     z-index: -1;
@@ -63,26 +68,36 @@ html, body, div, span, applet, object, iframe,
     justify-content: space-between;
     font-size: 40px;
     font-weight: bold;
-    padding: 40px;
+    padding: 10px;
     color: aliceblue;
 }
+.icons {
+    background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
+    padding: 10px;
+}
 .head img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     z-index: 2;
+}
+.head img:hover {
+    transform: scale(1.5);
 }
 .content {
     display: flex;
     width: 90%;
     justify-content: space-around;
-    margin: auto;
+    margin: 20px auto;
     padding: 20px;
 }
 .about {
-    border: 2px red solid;
     color: aliceblue;
     padding: 20px;
-    margin: 20px;
     background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -90,17 +105,21 @@ html, body, div, span, applet, object, iframe,
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
 }
-.about h2 {
+.about h1 {
     text-align: center;
     padding: 5px;
+    margin: 0px 0px 10px 0px;
     font-size: 1.5em;
 }
-.reposit { 
-    width: 90%;
-    margin: auto;
+#proj-tit {
+    margin: 0px 50px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 10px 25px;
 }
 .glass {
-    border: 2px red solid;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -108,7 +127,7 @@ html, body, div, span, applet, object, iframe,
 }
 .glass li {
     padding: 25px;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 a {
 	text-decoration: none;	
@@ -131,4 +150,17 @@ a:hover {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37); }
+    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37); 
+}
+.botton {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 76%, rgba(140,59,209,1) 100%);
+}
+.botton h2 {
+    color: white;
+    text-align: center;
+}

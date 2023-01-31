@@ -50,6 +50,13 @@ body {
     width: 100%;
     font-family: 'Oxygen', sans-serif;
     line-height: 1.5;
+    text-align: center;
+    background-image:
+url("/src/img/001.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 
 }
 #background{
@@ -62,28 +69,31 @@ body {
     justify-content: center;
 }    
 .head {
+    position: fixed;
+    top: 0px;
+    width: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 76%, rgba(140,59,209,1) 100%);
+    z-index: 2;
     
 }
 .content-head {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 2em;
     font-weight: bold;
     padding: 10px;
-    color: aliceblue;
-    margin: 0px 20px;
-    
+    color: aliceblue;   
 }
 .icons {
     background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 30px 0px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
-    padding: 10px;
+    padding: 8px 12px;
+    color: white;
 }
 .head img {
     width: 30px;
@@ -92,29 +102,24 @@ body {
 }
 .head img:hover {
     transform: scale(1.5);
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .content {
     display: flex;
     justify-content: space-between;
-    margin: 30px 40px;
-    
+    margin: 120px 40px 20px 40px;
 }
-.about {
-    color: aliceblue;
-    padding: 20px;
-    background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
+.content-text div {
+    display: block;
+    margin: 0px 0px 25px 0px;
+    justify-content: space-between;
 }
-.about h1 {
+.icons h1 {
     text-align: center;
     padding: 5px;
     margin: 0px 0px 10px 0px;
     font-size: 1.5em;
+    color: white;
 }
 #proj-tit {
     margin: 0px 50px;
@@ -124,31 +129,30 @@ body {
     font-weight: 400;
     padding: 10px 25px;
 }
-.glass {
+.projects {
     display: flex;
     justify-content: space-between;
     margin: auto;
     padding: 10px 25px;
 }
-.glass li {
+.projects a {
     padding: 25px;
     font-size: 1.3em;
-    display: table-cell;
-    vertical-align: middle;
+    text-align: center;
+        
 }
 a {
 	text-decoration: none;	
 }
-
 a:link, a:visited {
 	color: white;
 }
 
-.glass li:hover {
+.projects a:hover {
 	transform: scale(1.2);
     transition: 0.2s;
 }
-#container li {
+#container a {
     margin: 25px; 
   
     background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
@@ -159,7 +163,7 @@ a:link, a:visited {
     box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37); 
 }
 .botton {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     padding: 10px;

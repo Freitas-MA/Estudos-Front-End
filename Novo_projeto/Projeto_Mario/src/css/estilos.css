@@ -91,6 +91,7 @@ body {
     top: 0;
     left: 0;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+    z-index: 2;
 }
 
 .modal {

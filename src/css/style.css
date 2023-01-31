@@ -47,11 +47,7 @@ html, body, div, span, applet, object, iframe,
 /* Reset all */
 
 
-body { 
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(110,25,25,1) 50%, rgba(252,176,69,1) 100%);
-    }
-body img {
+#background{
     position: absolute;
     z-index: -1;
     width: 100vw;
@@ -61,36 +57,78 @@ body img {
     justify-content: center;
 }    
 .head {
-    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 76%, rgba(140,59,209,1) 100%);
+    display: flex;
+    justify-content: space-between;
     font-size: 40px;
     font-weight: bold;
     padding: 40px;
+    color: aliceblue;
 }
-.menu ul {
-    background-color: gray;
+.head img {
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+.content {
     display: flex;
-    text-align: center;
-    font-size: 30px;
-    width: 100vw;
-    padding: 15px 50px;
-    margin: 8px;
+    width: 90%;
     justify-content: space-around;
+    margin: auto;
+    padding: 20px;
 }
-
-#container li {
-    display: flex;
-    justify-content: center;
-    font-size: 3em;
-    
-  }
-#container li {
-    margin: 25px;
-}
-.glass{
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+.about {
+    border: 2px red solid;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
 }
+.about h2 {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+}
+.reposit { 
+    width: 90%;
+    margin: auto;
+}
+.glass {
+    border: 2px red solid;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 25px;
+}
+.glass li {
+    padding: 25px;
+    font-size: 2em;
+}
+a {
+	text-decoration: none;	
+}
+
+a:link, a:visited {
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+    text-transform: uppercase;
+    transition: all step-start;
+}
+#container li {
+    margin: 25px; 
+  
+    background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37); }

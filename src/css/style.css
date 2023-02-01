@@ -55,7 +55,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: 100% auto;
 
 }
 #background{
@@ -161,10 +161,10 @@ a:link, a:visited {
     box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37); 
 }
 .botton {
-    position: static;
+    position: absolute;
     bottom: 0px;
     width: 100%;
-    padding: 10px;
+    padding:3px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 76%, rgba(140,59,209,1) 100%);
 }

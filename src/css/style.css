@@ -47,7 +47,6 @@ html, body, div, span, applet, object, iframe,
 /* Reset all */
 
 body {
-    width: 100%;
     font-family: 'Oxygen', sans-serif;
     line-height: 1.5;
     text-align: center;
@@ -55,7 +54,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+    max-width: 99.9%;
+    max-height: 99.9%;
+    margin: auto;
 
 }
 #background{
@@ -83,7 +85,7 @@ body {
     color: aliceblue;   
 }
 .icons {
-    background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
+    background: linear-gradient(135deg, rgb(240, 0, 128), rgba(252, 252, 252, 0.323));
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 30px 0px;
@@ -105,12 +107,24 @@ body {
 .content {
     display: flex;
     justify-content: space-between;
-    margin: 25px 25px;
+    width: 75%;
+    margin: 30px auto;
 }
 .content-text div {
     display: block;
     margin: 0px 0px 25px 0px;
     justify-content: space-between;
+}
+.content .about {
+    background: linear-gradient(135deg, rgb(144, 70, 230), rgba(252, 252, 252, 0.323));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 30px 0px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
+    padding: 8px 12px;
+    color: white;
+    
 }
 .icons h1 {
     text-align: center;
@@ -153,15 +167,16 @@ a:link, a:visited {
 #container a {
     margin: 25px; 
   
-    background: linear-gradient(135deg, rgba(153, 30, 190, 0.404), rgba(252, 252, 252, 0.323));
+    background: linear-gradient(135deg, rgb(240, 0, 128), rgba(252, 252, 252, 0.323));
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
+    border-radius: 30px 0px;
     border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37); 
+    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
+    padding: 8px 12px; 
 }
 .botton {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     width: 100%;
     padding:3px;
@@ -173,5 +188,3 @@ a:link, a:visited {
     text-align: center;
     font-size: 0.7em;
 }
-
-/* teste para ver se a função será atualizada */

@@ -6,73 +6,71 @@ body {
     background-repeat: repeat-x;
     background-position: top center;
 }
-.site {
-    display: block;
-    width: 80%;
-    margin: auto;
-    position: fixed;
-    left: 10%;
-}
-
-#logo-brasil {
-    position: absolute;
-    position: absolute;
-    right: 0em;
-    width: auto;
-    height: 150px;
-    margin-top: 10px;
-    z-index: -1;
-}
-.logo-barra {
-    border: 3px green solid;
-    position: absolute;
-    margin-top: 1em;
-}
-#menu-barra {
-    background-color: brown;
-    width: 850px;
-    height: 2em;
-    margin-top: 3em;
-    text-align: center;
-    line-height: 2em;
-    border: 2px rgba(112, 33, 33, 0.558) solid;
-    z-index: 2;
-}
-#menu-barra ul {
-    font-size: 1.5em;
-    display: flex;
-    max-width: fit-content; 
-    margin: auto;
-}
-#menu-barra ul {
-    display: flex;
-    max-width: fit-content;    
-}
-#menu-barra a {
-    padding: 6px 25px;
+a, a:visited {
     text-decoration: none;
     color: white;
 }
-#menu-barra a:hover {
-    border-left: 2px rgba(112, 33, 33, 0.558) solid;
-    border-right: 2px rgba(112, 33, 33, 0.558) solid;
-    background-color: rgb(100, 24, 24);
+.menu-logo {
+    display: flex;
+    position: relative;
+    right: auto;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 70%;
 }
-.body {
-    border: 0px 1px blue solid;
-    padding: 15px;
-    margin: 5px;  
+.logo-barra {
+    display: block;
+    margin-top: 1em;
 }
-.body .context {
-    border: 0px 1px blue solid;
-    padding: 15px;
-    margin: 5px; 
+#menu-barra ul {
+    display: flex;
+    margin-top: 1.1em;
+    line-height: 2em;
+    font-size: 1.5em;
 }
-.botton {
-    display: flexbox;
-    position: fixed;
-    bottom: 0px;
-    width: max-content;
-    border: 1px blue solid;
-    padding: 15px;
+#menu-barra ul li {
+    padding: 0em 5%;
+    background-color: rgb(164, 16, 16);
+    border: 1px rgb(253, 0, 0) solid;
+    border-style: outset;
+    z-index: 2;
+    max-width: max-content;
+}
+#menu-barra ul li:hover {
+    background-color: rgb(188, 5, 5);
+    transform: scale(1.2);
+}
+.body { 
+    border: 1px red solid;
+    margin: 5% 10%;
+    padding: 0.2em;
+    display: flex;
+}
+.titulo {
+    background-color: rgb(18, 87, 161);
+    border: 1px red solid;
+    color: white;
+}
+.context {
+    border: 1px red solid;
+    margin: 1%;
+    padding: 2px;
+}
+a.entrevistas:link, a.entrevistas:hover, a.entrevistas:visited {
+    text-decoration: none;
+    color: black;
+    padding: 1px;
+    margin: auto;
+}
+.last-news {
+    border: 1px red solid;
+    margin: 1%;   
+}
+
+
+.content {
+    border: 1px red solid;
+    margin: 1%;
+    padding: 10%;
+    width: 89%;
 }

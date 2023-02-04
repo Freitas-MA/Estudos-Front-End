@@ -52,6 +52,7 @@ a, a:visited {
     font-size: 1.5em;
     text-align: center;
     font-weight: 600;
+    margin-bottom: 1em;
 }
 .context {
     margin: 0% 1%;
@@ -66,7 +67,8 @@ a, a:visited {
     border-radius: 4px;
 }
 .entrevistas li:hover {
-
+    background-color: rgb(226, 179, 116);
+    text-transform: capitalize;
 }
 a.entrevistas:link, a.entrevistas:hover, a.entrevistas:visited {
     text-decoration: none;

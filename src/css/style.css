@@ -45,12 +45,17 @@ html, body, div, span, applet, object, iframe,
             padding:0;
             }
 /* Reset all */
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+}
 .fundo-video {
-    position: absolute;
+    float: left;
     z-index: -3;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     justify-content: center;
 }
@@ -70,25 +75,13 @@ html, body, div, span, applet, object, iframe,
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
     z-index: -1;
 }
-body {
-    font-family: 'Oxygen', sans-serif;
-    line-height: 1.5;
-    text-align: center;
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    max-width: 99.9%;
-    max-height: 99.9%;
-    margin: auto;
-} 
-.head {
-    position: static;
+
+header {
+    position: absolute;
     top: 0px;
     width: 100%;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgba(140,59,209,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgb(59, 107, 209) 100%);
 }
 .content-head {
     display: flex;
@@ -98,7 +91,7 @@ body {
     color: aliceblue;   
 }
 .icons {
-    background: linear-gradient(135deg, rgb(240, 0, 128), rgba(252, 252, 252, 0.323));
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgb(59, 107, 209) 100%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 30px 0px;
@@ -117,19 +110,23 @@ body {
     transform: scale(1.5);
     transition: 0.2s;
 }
-.content {
+main { 
+    position: absolute;
+    top: 10%;
     display: flex;
     justify-content: space-between;
     width: 75%;
     margin: 30px auto;
+    z-index: 2;
 }
 .content-text div {
     display: block;
     margin: 0px 0px 25px 0px;
     justify-content: space-between;
+    z-index: 2;
 }
-.content .about {
-    background: linear-gradient(135deg, rgb(144, 70, 230), rgba(252, 252, 252, 0.323));
+main .about {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgb(59, 107, 209) 100%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 30px 0px;
@@ -137,7 +134,7 @@ body {
     box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
     padding: 8px 12px;
     color: white;
-    
+    z-index: 2;  
 }
 .icons h1 {
     text-align: center;
@@ -145,6 +142,7 @@ body {
     margin: 0px 0px 10px 0px;
     font-size: 1.5em;
     color: white;
+    z-index: 2;
 }
 #proj-tit {
     margin: 0px 50px;
@@ -153,18 +151,20 @@ body {
     font-size: 1.5em;
     font-weight: 400;
     padding: 10px 25px;
+    z-index: 2;
 }
 .projects {
     display: flex;
     justify-content: space-between;
     margin: auto;
     padding: 10px 25px;
+    z-index: 2;
 }
 .projects a {
     padding: 25px;
     font-size: 1.3em;
     text-align: center;
-        
+    z-index: 2;
 }
 a {
 	text-decoration: none;	
@@ -172,15 +172,14 @@ a {
 a:link, a:visited {
 	color: white;
 }
-
 .projects a:hover {
 	transform: scale(1.2);
     transition: 0.2s;
 }
 #container a {
     margin: 25px; 
-  
-    background: linear-gradient(135deg, rgb(240, 0, 128), rgba(252, 252, 252, 0.323));
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgb(59, 107, 209) 100%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 30px 0px;
@@ -189,15 +188,17 @@ a:link, a:visited {
     padding: 8px 12px; 
 }
 .botton {
-    position: relative;
+    position: absolute;
     bottom: 0px;
     width: 100%;
     padding:3px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 76%, rgba(140,59,209,1) 100%);
+    z-index: 2;
 }
 .botton h2 {
     color: white;
     text-align: center;
     font-size: 0.7em;
+    z-index: 2;
 }

@@ -91,13 +91,13 @@ header {
     color: aliceblue;   
 }
 .icons {
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgb(59, 107, 209) 100%);
+    background: linear-gradient(180deg, rgb(58, 57, 57) 0%, rgba(252, 252, 252, 0.73) 90%, rgb(59, 107, 209) 100%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 30px 0px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
-    padding: 8px 12px;
+    padding: 8px 20px;
     color: white;
 }
 
@@ -126,7 +126,7 @@ main {
     z-index: 2;
 }
 main .about {
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgb(59, 107, 209) 100%);
+    background: linear-gradient(180deg, rgb(58, 57, 57) 0%, rgba(36, 14, 165, 0.73) 90%, rgb(59, 107, 209) 100%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 30px 0px;
@@ -179,7 +179,7 @@ a:link, a:visited {
 #container a {
     margin: 25px; 
     z-index: 2;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgb(59, 107, 209) 100%);
+    background: linear-gradient(180deg, rgb(58, 57, 57) 0%, rgba(252, 252, 252, 0.73) 90%, rgb(59, 107, 209) 100%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 30px 0px;

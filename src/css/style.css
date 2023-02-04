@@ -50,7 +50,7 @@ body {
     font-family: 'Oxygen', sans-serif;
     line-height: 1.5;
     text-align: center;
-    background-image: url(https://github.com/Freitas-MA/Estudos-Front-End/blob/main/src/img/001.jpg?raw=true);
+    background-image: url(../img/);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;

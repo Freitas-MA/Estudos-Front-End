@@ -41,7 +41,6 @@ a, a:visited {
     transform: scale(1.2);
 }
 .body { 
-    border: 1px red solid;
     margin: 5% 10%;
     padding: 0.2em;
     padding-top: 0em;
@@ -96,27 +95,27 @@ a.entrevistas:link, a.entrevistas:hover, a.entrevistas:visited {
     width: 89%;
 }
 .block {
-    border: 1px blue solid;
-    margin: auto;
-    width: 65%;
+    margin: auto 1em;
     justify-content: space-between;
 }
 .pub {
     width: 100%;
     height: 23em;
+    margin-bottom: 30%;
 }
 .pub img {
     width: 100%;
     margin-bottom: 1em;
 }
-a.leia, a.leia:hover, a.leia:link {
+a.leia, a.leia:link {
     text-decoration: none;
     color: red;
     padding: 1px;
     margin: auto;
 }
-.subcontent {
-    display: inline;
+a.leia:hover { 
+    transform: scale(1.2);
+    background-color: aqua;
 }
 .prompt-noticias{
     width: 100%;
@@ -126,5 +125,11 @@ a.leia, a.leia:hover, a.leia:link {
 }
 .prompt-noticias img {
     width: 25%;
-    margin-bottom: 1em;
+    margin: 0em 1em 1em 0em;
+}
+.bottom { 
+    background-color: rgb(19, 67, 156);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
 }

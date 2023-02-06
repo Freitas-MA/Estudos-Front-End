@@ -31,14 +31,15 @@ a, a:visited {
 #menu-barra ul li {
     padding: 0em 5%;
     background-color: rgb(164, 16, 16);
-    border: 1px rgb(253, 0, 0) solid;
-    border-style: outset;
+    border: 3px rgba(222, 63, 63, 0.223);
+    border-style: double;
     z-index: 2;
     max-width: max-content;
 }
 #menu-barra ul li:hover {
     background-color: rgb(188, 5, 5);
-    transform: scale(1.2);
+    transform: scale(1.1);
+    z-index: 3;
 }
 .body { 
     margin: 5% 10%;
@@ -68,7 +69,7 @@ a, a:visited {
 }
 .entrevistas li:hover {
     background-color: rgb(226, 179, 116);
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 a.entrevistas:link, a.entrevistas:hover, a.entrevistas:visited {
     text-decoration: none;
@@ -117,7 +118,9 @@ a.leia, a.leia:link {
 }
 a.leia:hover { 
     transform: scale(1.2);
-    background-color: aqua;
+    background-color:  rgb(226, 179, 116);
+    color: black;
+    text-transform: capitalize;
 }
 .prompt-noticias{
     width: 100%;

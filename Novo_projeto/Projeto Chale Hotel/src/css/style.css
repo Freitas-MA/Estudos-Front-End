@@ -3,6 +3,9 @@ body {
     background: #fff url(../image/bg.png);
     margin: 15px;
 }
+p {
+    text-align: justify;
+}
 #container {
     background: url(../image/bg-container.png) top center repeat-y;  
     margin: 0 auto;

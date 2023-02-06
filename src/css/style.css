@@ -189,10 +189,10 @@ a:link, a:visited {
     padding: 8px 12px; 
 }
 .botton {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
-    padding:3px;
+    padding:1.5px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 76%, rgba(140,59,209,1) 100%);
     z-index: 2;

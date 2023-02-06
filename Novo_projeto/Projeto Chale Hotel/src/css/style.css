@@ -22,6 +22,18 @@ body {
     background: url(../image/topo-imagem-principal2.png) no-repeat;
     width: 100%;
     height: 250px;
+    z-index: 1;
+}
+.logo a {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 3;
+    background: url(../image/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px;
+
 }
 #area-menu {
     position: absolute;
@@ -30,4 +42,57 @@ body {
     background: url(../image/topo-imagem-lateral.png) no-repeat;
     width: 450px;
     height: 250px;
+    z-index: 2;
+}
+#conteudo-menu {
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+#menu-locais {
+    border-top: #8b8448 1px solid;
+    border-bottom: #8b8448 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8b8448;
+}
+#menu-locais .locais {
+    float: left;
+    line-height: 2em;
+    text-indent: 2px;
+}
+a.reserva {
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px;
+    float: right;
+}
+a.reserva:hover {
+   transform: scale(1.1);
+   transition: 0.2s;
+}
+#menu-links {
+    display: flex;
+    padding-top: 7px;
+    float: left;
+}
+#menu-links li {
+    padding: 10px 0px;
+    text-indent: 8px;
+    font-size: 0.8em;
+}
+#menu-links li:hover {
+    background-color: #f1ecc0;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#menu-links a {
+    text-decoration: none;
+    color: #8b8448;
+    font-weight: bold;
+}
+#menu-links img {
+    width: 75%;
 }

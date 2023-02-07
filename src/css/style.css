@@ -116,13 +116,14 @@ main {
     top: 10%;
     display: flex;
     justify-content: space-between;
-    width: 75%;
-    margin: 30px 14%;
+    width: 80%;
+    min-width: 400px;
+    margin: 0% 10%;
     z-index: 2;
+    
 }
 .content-text div {
     display: block;
-    margin: 0px 0px 25px 0px;
     justify-content: space-between;
     z-index: 2;
 }
@@ -137,13 +138,17 @@ main .about {
     color: white;
     z-index: 2;  
 }
-.icons h1 {
+h1 {
     text-align: center;
     padding: 5px;
     margin: 0px 0px 10px 0px;
     font-size: 1.5em;
     color: white;
     z-index: 2;
+}
+p { 
+    line-height: 2em;
+    font-size: 1em;
 }
 #proj-tit {
     margin: 0px 50px;

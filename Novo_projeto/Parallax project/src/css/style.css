@@ -15,11 +15,13 @@ h3 {
     text-align: center;
 }
 .caixa1, .caixa2, .caixa3, .caixa4{
-    border: 1px solid red;
     height: 100%;
     opacity: 0.7;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
 }
 .caixa1 {
     background-image: url(../image/imagem1.jpg);
@@ -32,4 +34,47 @@ h3 {
 }
 .caixa4 {
     background-image: url(../image/imagem4.jpg);  
+}
+.conteudo-titulo {
+    position: absolute;
+    left: 0%;
+    top: 35%;
+    width: 100%;
+   text-align: center;
+}   
+.conteudo span {
+    padding: 15px;
+} 
+.conteudo-titulo span.titulo {
+    color: white;
+    background: rgba(144, 144, 144, 0.659);
+    box-shadow: 0 8px 32px 0 rgba(236, 217, 6, 0.645);
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+}
+.conteudo-titulo div.titulo {
+    color: white;
+    background: rgba(144, 144, 144, 0.659);
+    box-shadow: 0 8px 32px 0 rgba(236, 217, 6, 0.645);
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+p { 
+    text-align: center;
 }

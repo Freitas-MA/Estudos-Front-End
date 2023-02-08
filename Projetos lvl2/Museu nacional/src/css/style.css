@@ -57,6 +57,7 @@ aside {
     width: 350px;
     float: right;
     background: #ebe7dd;
+    padding-bottom: 30px;
 }
 section#visita { 
     background: #cdc8b1;
@@ -72,6 +73,7 @@ h4 {
 }
 input {
     height: 20px;
+    width: 80px;
     background: white;
     border: none;
     font-size: 1em;

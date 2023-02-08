@@ -19,7 +19,45 @@
             <div id="logo">
                 <h1> <a href="#">Museu Nacional</a></h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Exposicoes</a></li>
+                    <li><a href="#">Pesquisa</a></li>
+                    <li><a href="#">Acervo</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </header>
+        <div id="principal">
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="./src/image/museu.png" alt="museu">
+                </section>
+            </div>
+            <aside>
+                <section id="depoimento">
+                    <img src="./src/image/depoimento.png" alt="depoimento">
+                </section>
+                <section id="visita">
+                    <h4>Faca uma visita</h4>
+                    <form">
+                <fieldset>
+                    <legend>Selecione uma data</legend>
+                    <label for="data">Data</label>
+                    <input class="campo" 
+                    style="width: 100px;" type="text" id="data" value="dd/mm/aaaa">
+
+                    <label for="qtd">Qtd pessoas</label>
+                    <input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+                </fieldset>
+                <input class="botao" type="submit" value="Verificar disponibilidade">
+            </form>
+                </section>
+            </aside>
+        </div>
     </div>
 </body>
 </html>

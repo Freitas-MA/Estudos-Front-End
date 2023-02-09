@@ -12,13 +12,16 @@ a:hover {
 }
 body {
     background: url(../image/fundo.png) repeat-x;
+    padding: 0 10%;
+    
 }
 #container {
     width: 1080px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 #logo h1 {
     float: left;
+    margin-right: 5%;
 }
 #logo a {
     width: 248px;
@@ -49,27 +52,42 @@ nav ul li a:hover {
     border-bottom: 1px solid #535858;
 }
 #conteudo {
-    width: 710px;
+    width: 65%;
     float: left;
-    background: green;
+}
+section#postagem {
+    display: flex;
+    flex-flow: row wrap;
+}
+#capa img {
+    width: 100%;
 }
 aside {
-    width: 350px;
+    width: 32%;
     float: right;
     background: #ebe7dd;
     padding-bottom: 30px;
+}
+#depoimento  img {
+    width: 100%;
 }
 section#visita { 
     background: #cdc8b1;
     padding: 10px 27px 27px 27px;
     margin-top: 10px;
-
+    width: auto;
 }
 h4 {
     color: #86521a;
     text-transform: uppercase;
     padding-bottom: 3px;
     margin-bottom: 0;
+}
+h3 {
+    color: #227115;
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 input {
     height: 20px;
@@ -93,4 +111,19 @@ fieldset {
 }
 legend {
     display: none;
+}
+section#galeria {
+    padding: 0 27px 0 27px;
+    width: auto;
+}
+section#galeria a {
+    display: block;
+    background: url(../image/fundo-foto.png) no-repeat;
+    float: left;
+    padding: 15px 15px 18px 15px;
+    margin: 10px 0px 0px 20px;
+}
+section#galeria img {
+    margin-left: 2px;
+    margin-top: 5px;
 }

@@ -44,7 +44,7 @@ nav.navbar-transparent {
 #resources h2 {
     color: white;
 }
-#resources h3, p {
+#resources h3, #resources p {
     color: #9bf0e1;
 }
 .albuns {

@@ -26,11 +26,12 @@ nav.navbar-transparent {
 .capa {
     text-align: center;
 }
-
-#services {
-    background-color: white;
+.caixa {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+#services {
+    background-color: blue  
 }
 #resources {
     padding-top: 20px;

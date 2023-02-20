@@ -133,3 +133,32 @@ h3 {
     background-color: white;
     color: black;
 }
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+footer h4 { 
+    color: #919496;
+    font-size: 0.8em;
+}
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.6em;
+}
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+footer .list-unstyled li {
+    float: right;
+    margin: 0 10px;
+    font-size: 3em;
+}
+footer .list-unstyled li a, a:hover {
+    color: #919496;
+    text-transform: uppercase;
+    text-decoration: none;
+}

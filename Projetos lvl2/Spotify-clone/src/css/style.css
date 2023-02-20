@@ -1,5 +1,6 @@
 html, body, #home {
     height: 100vh;
+    overflow-x: hidden;
 }
 body {
     background: url(../image/capa.png), 
@@ -31,7 +32,7 @@ nav.navbar-transparent {
     padding-bottom: 20px;
 }
 #services {
-    background-color: blue  
+    background-color: white  
 }
 #resources {
     padding-top: 20px;
@@ -43,17 +44,25 @@ nav.navbar-transparent {
 #resources h2 {
     color: white;
 }
-#resources h3 {
+#resources h3, p {
     color: #9bf0e1;
 }
 .albuns {
     padding: 10px 0;
 }
+.rotate {
+    transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    padding-left: 80px;
+}
 h1 {
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
-     color: white;
+    color: white;
 }
 h2 {
     font-size: 3em;

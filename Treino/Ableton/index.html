@@ -20,15 +20,15 @@
       <div class="d-block">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div>
-        <div class="container justify-content-between d-flex">
-          <a class="navbar-brand ml-5"><img class="img-fluid" id="logo" src="./src/image/ableton.png" alt=""></a>
+        <div class="container-fluid d-flex" id="nav-bar">
+          <a class="navbar-brand"><img class="img-fluid" id="logo" src="./src/image/ableton.png" alt=""></a>
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="my-nav" class="collapse navbar-collapse justify-content-between">
-              <div class="d-flex">
-                <ul class="navbar-nav my-auto">
-                  <li class="nav-item active">
+            <div id="my-nav" class="collapse navbar-collapse">
+              <div class="container-fluid d-flex">
+                <ul class="navbar-nav mr-auto my-auto">
+                  <li class="nav-item active ">
                     <a class="nav-link" href="#">Live <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
@@ -48,24 +48,28 @@
                   
                   </li>
                 </ul>
-                <ul class="navbar-nav float-right">
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><button class="btn btn-primary" type="button">Try for free</button></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><button class="btn btn-secondary" type="button">Account</button></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><button class="btn btn-secondary" type="button">logout</button></a>
-                  </li>
-                </ul>
+                <div class="d-flex justify-content-end">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><button class="btn btn-primary" type="button">Try for free</button></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><button class="btn btn-secondary" type="button">Account</button></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><button class="btn btn-secondary" type="button">logout</button></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>  
         </div> 
-        <div id="my-collapse" class="collapse mx-5 mt-5 pt-5">
+        <div id="my-collapse" class="collapse">
           <section>
-            <h1>More on Ableton.com</h1>
             <div>
+              
+            <div class="ml-5">
+              <h1>More on Ableton.com</h1>
               <span class="mx-3" id="link-submenu"><a href="#">Blog</a></span>
               <span class="mx-3" id="link-submenu"><a href="#">Ableton for the Classroom</a></span>
               <span class="mx-3" id="link-submenu"><a href="#">Ableton for Colleges and Universities</a></span>
@@ -75,6 +79,7 @@
               <span class="mx-3" id="link-submenu"><a href="#">Apprenticeships</a></span>
             </div>
             <br><br>
+            </div>
             <div class="row">
                 <div class="col px-5 mx-3">
                   <h3>Loop</h3>
@@ -105,12 +110,21 @@
      
       </div>
     </header>
+    <main class="border mt-5 pt-5 mx-4">
+      <section>
+        <span class="mr-4"><a href="#">About</a></span>
+        <span class="mr-4"><a href="#">Jobs</a></span>
+        <span class="mr-4"><a href="#">Apprenticeships</a></span>
+      </section>
+      <section class="border mt-3 px-5">
+        <img class="img-fluid px-5 m-auto" src="https://ableton-production.imgix.net/about/header.jpg" id="ableton">
+        
+      </section>
 
 
 
-
-
-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores a dolore saepe deserunt vel libero velit reiciendis alias debitis dolorum, esse blanditiis, accusantium, ipsam perspiciatis molestiae inventore dolorem repellat non. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae, veritatis itaque impedit aspernatur totam ducimus. Minus, voluptates dolorum ut fugit ullam maiores quos, provident dolores esse aspernatur neque. Vitae?</p>
+    </main>
     <br><br><br><br>
     <h1>Olá, mundo!</h1>
 

@@ -20,3 +20,27 @@
     background-color: 
     #fbffa7;
 }
+#img-square {
+    width: auto;
+    margin: auto;
+    padding: 75px;
+}
+#img-cont1 {
+    margin-right: -80px;
+    z-index: 2;
+    border-radius: 2px;
+}
+#green-block {
+    background-color: #b6ffc0;
+    margin-left: 5em;
+}
+#green-block img {
+    margin: auto;
+    padding: 3em;
+    width: 30vw;
+}
+#ab7 {
+    width: 40vw;
+    margin-left: -80px;
+
+}

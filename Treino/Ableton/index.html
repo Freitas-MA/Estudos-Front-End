@@ -110,13 +110,13 @@
      
       </div>
     </header>
-    <main class="border mt-5 pt-5 mx-4">
+    <main class="  mt-5 pt-5 mx-4">
       <section>
         <span class="mr-4"><a href="#">About</a></span>
         <span class="mr-4"><a href="#">Jobs</a></span>
         <span class="mr-4"><a href="#">Apprenticeships</a></span>
       </section>
-      <section class="border mt-3 px-5">
+      <section class="  mt-3 px-5">
         <div id="my-carousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -157,7 +157,7 @@
       </section>
       <section class="d-flex">
         <div class="mx-auto">
-          <iframe width="852" height="479" src="https://www.youtube.com/embed/9SbnhgjeyXA" title="Why Ableton - Juanpe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="852" height="479" src="https://www.youtube.com/embed/9SbnhgjeyXA" title="Why Ableton - Juanpe" frame ="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
       <section class="text-center my-5 px-5">
@@ -201,7 +201,7 @@
         </p>
       </section>
       <div class="row">
-        <div id="bg-pink" class="col-md-8 m-auto border d-flex">
+        <div id="bg-pink" class="col-md-8 m-auto   d-flex">
           <img id="img-9" class="img-fluid my-auto" src="./src/image/ableton9.jpg" alt="abt9">
           <img id="img-8" class="img-fluid my-auto" src="./src/image/ableton.jpg" alt="abt8">          
         </div>
@@ -215,7 +215,7 @@
         </p>
       </section>
       <div class="container">
-        <div id="bg-blue" class="row border">
+        <div id="bg-blue" class="row  ">
           <div class="col-md-6">
             <img class="img-fluid ml-0" src="./src/image/ableton5.jpg" alt="">
             </div>
@@ -228,11 +228,11 @@
           </div>
         </div>
       </div>
-      <footer class="mt-5 px-5 border-top">
+      <footer class="mt-5 px-5 border-top -top">
         <h1>Ableton</h1>
         <div id="footer-columns" class="row">
           <div class="col-md-4 footer-column px-5">
-            <div class="border">
+            <div class=" ">
               <ul>
                 <li><a href="#">Register Live or Push</a></li>
                 <li><a href="#">About Ableton</a></li>
@@ -246,7 +246,7 @@
               </ul>
               </span>
             </div>
-            <div class="border">
+            <div class=" ">
               <h3>Community</h3>
               <ul>
                 <li><a href="#">Find Ableton User Groups</a></li>
@@ -256,7 +256,7 @@
             </div>
           </div>
           <div class="col-md-4 footer-column px-5">
-            <div class="border">
+            <div class=" ">
               <h3>Education</h3>
               <ul>
                 <li><a href="#">Offer for students and teachers</a></li>
@@ -264,7 +264,7 @@
                 <li><a href="#">Ableton for Colleges and Universities</a></li>
               </ul>
             </div>
-            <div class="border">
+            <div class=" ">
               <h3>Distributors</h3>
               <ul>
                 <li><a href="#">Find Dsitributors</a></li>
@@ -273,29 +273,40 @@
             </div>
           </div>
           <div class="col-md-4 footer-column px-5">
-            <div class="border">
+            <div class=" ">
               <h3>Sign up to our newsletter</h3>
               <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</p>
-              <!--
-                Tenho que por um input para o email agora! 
-              -->
+              <div class="input-group">
+                <input class="form-control" type="email" name="email" placeholder="seu-email@email.com" aria-label="Recipient's text" aria-describedby="email">
+                <div class="input-group-append">
+                  <span class="input-group-text btn btn-success" id="email">Subscrive</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3>Language and Location</h3>
+              <br>
+              <div class="dropdown d-flex">
+                <button id="my-dropdown-language" class="btn btn-lg btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
+                <div class="dropdown-menu" aria-labelledby="my-dropdown-language">
+                  <a class="dropdown-item active" href="#">Inglesh</a>
+                  <a class="dropdown-item " href="#">Portuguese</a>
+                  <a class="dropdown-item " href="#">Spanish</a>
+                  <a class="dropdown-item " href="#">French</a>
+                </div>
+                <div class="dropdown">
+                  <button id="my-dropdown-location" class="btn btn-lg btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Location</button>
+                  <div class="dropdown-menu" aria-labelledby="my-dropdown-location">
+                    <a class="dropdown-item active" href="#">UK</a>
+                    <a class="dropdown-item " href="#">Portugal</a>
+                    <a class="dropdown-item " href="#">Spain</a>
+                    <a class="dropdown-item " href="#">France</a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
-<!--
-
-    Parei agora a tentar colocar o texto dentro da imagem 
-    O link para o modelo e este!!! 
-    https://www.ableton.com/en/about/
-
--->
-
-
-    
-    </main>
-    <br><br><br><br>
-    <h1>Olá, mundo!</h1>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

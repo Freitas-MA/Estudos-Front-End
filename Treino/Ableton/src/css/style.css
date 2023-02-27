@@ -58,3 +58,18 @@
 #bg-blue {
     background-color: #b1c5ff;
 }
+h1 {
+    font-size: 2.8em;
+}
+h3 { 
+    font-size: 2.5em;
+}
+p {
+    font-size: 1.5em;
+}
+footer a, footer a:hover, footer a:active {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    text-transform: inherit;
+}

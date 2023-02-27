@@ -10,6 +10,9 @@
 #nav-bar {
     width: 100vw;
 }
+#ini-buttons { 
+    float: right;
+}
 #text-logo {
     margin-top: -5em;
     font-size: 6em;
@@ -34,11 +37,7 @@
     background-color: #b6ffc0;
     margin-left: 5em;
 }
-#green-block img {
-    margin: auto;
-    padding: 3em;
-    width: 30vw;
-}
+
 #ab7 {
     margin-left: -10em;
 }
@@ -73,3 +72,82 @@ footer a, footer a:hover, footer a:active {
     font-size: 1.3em;
     text-transform: inherit;
 }
+
+@media (max-width: 575.98px) { 
+    body {
+        max-width: 100%;
+    } 
+    #my-collapse { 
+        max-width: 100%;
+    }
+    #nav-bar {
+        justify-content: space-between;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        margin: 0px 10px;
+        padding: 0;    
+}
+    h3 { 
+        font-size: 1.5em;
+        margin: 0px 10px;
+        padding: 0;
+    }
+    p {
+        font-size: 1em;
+        margin: 0px 10px;
+        padding: 0;    
+    }
+    footer a, footer a:hover, footer a:active {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        text-transform: inherit;
+}
+    #iframe { 
+        width: 326px;
+        height: auto;
+    }
+    #ab7 { 
+        width: 150px;
+        margin: -190px 0px 20px 30px;
+    }
+    #green-block {
+        height: 400px;
+    }
+    #green-block img {
+        padding: 0;
+        
+}
+    #img-5 { 
+        width: 125px;
+        margin: -50px 0px 0px 0px;
+        z-index: 2;
+    }
+    #img-9 {
+        margin: 160px 0px 0px 0px;
+    }
+    #bg-pink { 
+        height: 35em;
+    }
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #green-block img {
+    margin: auto;
+    padding: 3em;
+    width: 30vw;
+}
+ }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+ }
+

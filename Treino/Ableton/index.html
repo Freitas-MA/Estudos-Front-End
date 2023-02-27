@@ -13,20 +13,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <title>Olá, mundo!</title>
+    <title>Ableton - Clone</title>
   </head>
   <body>
     <header>
       <div class="d-block">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div>
-        <div class="container-fluid d-flex" id="nav-bar">
+        <div class="container d-flex" id="nav-bar">
           <a class="navbar-brand"><img class="img-fluid" id="logo" src="./src/image/ableton.png" alt=""></a>
-            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            
             <div id="my-nav" class="collapse navbar-collapse">
-              <div class="container-fluid d-flex">
+              <div class="container d-flex">
                 <ul class="navbar-nav mr-auto my-auto">
                   <li class="nav-item active ">
                     <a class="nav-link" href="#">Live <span class="sr-only">(current)</span></a>
@@ -48,7 +46,7 @@
                   
                   </li>
                 </ul>
-                <div class="d-flex justify-content-end">
+                <div id="ini-buttons" class="d-flex justify-content-end">
                   <ul class="navbar-nav">
                     <li class="nav-item">
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><button class="btn btn-primary" type="button">Try for free</button></a>
@@ -63,43 +61,43 @@
                 </div>
               </div>
             </div>  
+            <button id="btn-toggle-start" class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
         </div> 
         <div id="my-collapse" class="collapse">
           <section>
             <div>
               
-            <div class="ml-5">
+            <div class="row ml-5">
               <h1>More on Ableton.com</h1>
-              <span class="mx-3" id="link-submenu"><a href="#">Blog</a></span>
-              <span class="mx-3" id="link-submenu"><a href="#">Ableton for the Classroom</a></span>
-              <span class="mx-3" id="link-submenu"><a href="#">Ableton for Colleges and Universities</a></span>
-              <span class="mx-3" id="link-submenu"><a href="#">Certified Training</a></span>
-              <span class="mx-3" id="link-submenu"><a href="#">About Ableton</a></span>
-              <span class="mx-3" id="link-submenu"><a href="#">Jobs</a></span>
-              <span class="mx-3" id="link-submenu"><a href="#">Apprenticeships</a></span>
+              <span class="mx-3 col-md-auto" id="link-submenu"><a href="#">Blog</a></span>
+              <span class="mx-3 col-md-auto" id="link-submenu"><a href="#">Ableton for the Classroom</a></span>
+              <span class="mx-3 col-md-auto" id="link-submenu"><a href="#">Ableton for Colleges and Universities</a></span>
+              <span class="mx-3 col-md-auto" id="link-submenu"><a href="#">Certified Training</a></span>
+              <span class="mx-3 col-md-auto" id="link-submenu"><a href="#">About Ableton</a></span>
+              <span class="mx-3 col-md-auto" id="link-submenu"><a href="#">Jobs</a></span>
+              <span class="mx-3 col-md-auto" id="link-submenu"><a href="#">Apprenticeships</a></span>
             </div>
             <br><br>
             </div>
             <div class="row">
-                <div class="col-md-6 px-5 mx-3">
+                <div class="col-md-6 px-md-5 mx-3">
                   <h3>Loop</h3>
                   <p>Whatch Talks, Peromances and features from Ableton's Summit for Music Makers.</p>
                 </div>
-                <div class="col-md-6 px-5 mx-3">
+                <div class="col-md-6 px-md-5 mx-3">
                   <h3>Learning Music</h3>
                   <p>Leanr the fundamentals of music making right in your browser.</p>
                 </div>
-                <div class="col-md-6 px-5 mx-3">
+                <div class="col-md-6 px-md-5 mx-3">
                   <h3>Learning Synths</h3>
                   <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
                 </div>
-                <div class="col-md-6px-5 mx-3">
+                <div class="col-md-6px-md-5 mx-3">
                   <h3>Making Music</h3>
                   <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
                 </div>
-  
-                          
-  
             </div>
   
           </section>
@@ -116,7 +114,7 @@
         <span class="mr-4"><a href="#">Jobs</a></span>
         <span class="mr-4"><a href="#">Apprenticeships</a></span>
       </section>
-      <section class="  mt-3 px-5">
+      <section class="  mt-3 px-md-5">
         <div id="my-carousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -129,7 +127,7 @@
           </div>
         </div>
       </section>
-      <section class="text-center my-5 px-5">
+      <section class="text-center my-md-5 px-md-5">
         <h3>We make <a href="#">Live</a>, <a href="#">Push</a> and <a href="#">Link</a> — unique software and hardware for music creation and performance. With these products, our community of users creates amazing things.
         </h3>
         <p>
@@ -148,7 +146,7 @@
         
       </div>
       </section>
-      <section class="text-center my-5 px-5">
+      <section class="text-center my-md-5 px-md-5">
         <h3>Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly rewarding.
         </h3>
         <p>
@@ -157,10 +155,10 @@
       </section>
       <section class="d-flex">
         <div class="mx-auto">
-          <iframe width="852" height="479" src="https://www.youtube.com/embed/9SbnhgjeyXA" title="Why Ableton - Juanpe" frame ="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe id="iframe" width="852" height="479" src="https://www.youtube.com/embed/9SbnhgjeyXA" title="Why Ableton - Juanpe" frame ="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
-      <section class="text-center my-5 px-5">
+      <section class="text-center my-md-5 px-md-5">
           <h3>We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.
           </h3>
           <p>
@@ -169,48 +167,48 @@
       </section>
       <div class="row">
         <div class="col-md-6" id="green-block">
-          <img class="img-fluid" src="./src/image/ableton5.jpg" alt="ab5">
-          <img class="img-fluid" src="./src/image/ableton9.jpg" alt="ab9">
+          <img id="img-5" class="img-fluid" src="./src/image/ableton5.jpg" alt="ab5">
+          <img id="img-9" class="img-fluid" src="./src/image/ableton9.jpg" alt="ab9">
         </div>
         <div id="img-ab7" class="col-md-5 my-auto">
           <img id="ab7" class="img-fluid align-middle" src="./src/image/ableton7.jpg" alt="ab7">
         </div>
         
       </div>
-      <section class="text-center my-5 px-5">
-        <h3 class="my-5 px-5">
+      <section class="text-center my-md-5 px-md-5">
+        <h3 class="my-md-5 px-md-5">
           We believe it takes focus to create truly outstanding instruments. We only work on a few products and we strive to make them great.
         </h3>
-        <P class="my-5 px-5">
+        <P class="my-md-5 px-md-5">
           Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and grow. We’ve learned that achieving the best results comes from building teams that are richly diverse, and thus able to explore problems from a wider set of perspectives. We don’t always agree with each other, but opinion and debate are valued and openly encouraged.
         </P>
       </section>
-      <section class="px-5 my-5">
+      <section class="px-md-5 my-md-5">
         <img class="img-fluid" src="./src/image/ableton10.jpg" alt="">
       </section>
-      <section class="text-center my-5 px-5">
-        <h3 class="my-5 px-5">
+      <section class="text-center my-md-5 px-md-5">
+        <h3 class="my-md-5 px-md-5">
           We’re passionate about what we do, but we’re equally passionate about improving who we are.
         </h3>
-        <p class="mt-5 px-5">
+        <p class="mt-5 px-md-5">
           We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.
         </p>
         <br>
-        <p class="mb-5 px-5">
+        <p class="mb-5 px-md-5">
           Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices. 
         </p>
       </section>
       <div class="row">
         <div id="bg-pink" class="col-md-8 m-auto   d-flex">
-          <img id="img-9" class="img-fluid my-auto" src="./src/image/ableton9.jpg" alt="abt9">
+          <img id="abt-9" class="img-fluid my-auto" src="./src/image/ableton9.jpg" alt="abt9">
           <img id="img-8" class="img-fluid my-auto" src="./src/image/ableton.jpg" alt="abt8">          
         </div>
       </div>
-      <section class="text-center my-5 px-5">
-        <h3 class="my-5 px-5">
+      <section class="text-center my-md-5 px-md-5">
+        <h3 class="my-md-5 px-md-5">
           We want our employees to love it here. Since we’re looking for exceptional talent from around the world, we will do everything we can to make your transition as easy as possible.
         </h3>
-        <p class="mt-5 px-5">
+        <p class="mt-5 px-md-5">
           If you're joining us in Berlin, we'll help with relocation and paperwork. We’ll even provide you with free German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it’s not all work; we have several company and team outings throughout the year as well as a variety of fun, informal small-group activities.
         </p>
       </section>
@@ -228,10 +226,10 @@
           </div>
         </div>
       </div>
-      <footer class="mt-5 px-5 border-top -top">
+      <footer class="mt-5 px-md-5 border-top -top">
         <h1>Ableton</h1>
         <div id="footer-columns" class="row">
-          <div class="col-md-4 footer-column px-5">
+          <div class="col-md-4 footer-column px-md-5">
             <div class=" ">
               <ul>
                 <li><a href="#">Register Live or Push</a></li>
@@ -255,7 +253,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4 footer-column px-5">
+          <div class="col-md-4 footer-column px-md-5">
             <div class=" ">
               <h3>Education</h3>
               <ul>
@@ -272,7 +270,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4 footer-column px-5">
+          <div class="col-md-4 footer-column px-md-5">
             <div class=" ">
               <h3>Sign up to our newsletter</h3>
               <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</p>
@@ -283,7 +281,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="mt-5">
               <h3>Language and Location</h3>
               <br>
               <div class="dropdown d-flex">

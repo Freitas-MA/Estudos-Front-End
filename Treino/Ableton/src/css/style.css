@@ -11,7 +11,7 @@
     width: 100vw;
 }
 #text-logo {
-    margin-top: -4em;
+    margin-top: -5em;
     font-size: 6em;
     font-weight: 500;
     color: #ff764d;
@@ -40,6 +40,21 @@
     width: 30vw;
 }
 #ab7 {
-    
-    
+    margin-left: -10em;
+}
+#bg-pink {
+    background-color: #d5b3ff;
+    justify-content: space-between;
+    height: 70em;
+}
+#img-8 {
+    margin-right: -25em;
+    width: 80%;
+}
+#img-9 { 
+    margin-left: -10em;
+    width: 40%;
+}
+#bg-blue {
+    background-color: #b1c5ff;
 }

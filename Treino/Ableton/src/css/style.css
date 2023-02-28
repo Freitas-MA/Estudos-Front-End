@@ -26,7 +26,7 @@ body {
     width: 100vw;
 }
 #navbar-content2 { 
-    display: flex;
+    display: block;
     width: 120vw;
     justify-content: space-between;
 }

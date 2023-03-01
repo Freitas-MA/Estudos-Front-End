@@ -11,4 +11,35 @@ html {
 
 .opacity { 
     opacity: 0.6;
+    border-radius: 10px;
+}
+.logos {
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 100%;
+    vertical-align: middle;
+}
+.logos div { 
+    line-height: 1em;
+    width: 50%;
+}
+.logos div:hover  { 
+    background-color: azure;
+    border-radius: 10px;
+    color: black;
+}
+.bg-glass {
+    background: linear-gradient(180deg, rgba(251, 247, 247, 0.55) 0%, rgba(252, 252, 252, 0.73) 90%, rgba(118, 115, 115, 0.56) 100%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border:3px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
+    padding: 8px 20px;
+    color: black;
+    width: 50%;
+    margin: auto;
+}
+.carousel-inner {
+    border-radius: 15px;
 }

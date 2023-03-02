@@ -46,165 +46,71 @@ html, body, div, span, applet, object, iframe,
             }
 /* Reset all */
 
-body { 
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5em;
-}
-.fundo-video {
-    position: fixed;
-    float: left;
-    z-index: -3;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    display: flex;
-    justify-content: center;   
+
+/*
+* 
+* @author Marcos Freitas
+*/
+html { 
+    font-family: 'Raleway', sans-serif;
 }
 
-.fundo-video .video {
-    height: 100%;
-    z-index: -2;
-}
 
-.fundo-video::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
-    z-index: -1;
-}
 
-header {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 90%, rgb(59, 107, 209) 100%);
+
+.opacity { 
+    opacity: 0.6;
+    border-radius: 10px;
 }
-.content-head {
-    display: flex;
-    justify-content: space-around;
-    font-size: 2em;
-    font-weight: bold;
-    color: aliceblue;   
+.logos {
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 100%;
+    vertical-align: middle;
 }
-.icons {
-    background: linear-gradient(180deg, rgb(58, 57, 57) 0%, rgba(252, 252, 252, 0.73) 90%, rgb(59, 107, 209) 100%);
+.logos div { 
+    line-height: 1em;
+    width: 50%;
+}
+.logos div:hover  { 
+    background-color: azure;
+    border-radius: 10px;
+    color: black;
+}
+.bg-glass {
+    background: linear-gradient(180deg, rgba(251, 247, 247, 0.55) 0%, rgba(252, 252, 252, 0.73) 90%, rgba(118, 115, 115, 0.56) 100%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-radius: 30px 0px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    border:3px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
     padding: 8px 20px;
-    color: white;
+    color: black;
+    width: 50%;
+    margin: auto;
+}
+.carousel-inner {
+    border-radius: 15px;
+}
+@media (min-width: 768px )
+{
+    #filters
+    {
+        display: block;
+    }
+    #read-more {
+        display: none;
+        border-radius: 5px;
+    }
+    #filters2
+    {
+        display: block;
+    }
+    #read-more2 {
+        display: none;
+    }
+    .d-md-none {
+        display: none;
+    }
 }
 
-.head img {
-    width: 30px;
-    height: 30px;
-    z-index: 2;
-}
-.head img:hover {
-    transform: scale(1.5);
-    transition: 0.2s;
-}
-main { 
-    position: absolute;
-    top: 10%;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    min-width: 400px;
-    margin: 0% 10%;
-    z-index: 2;
-    
-}
-.content-text div {
-    display: block;
-    justify-content: space-between;
-    z-index: 2;
-}
-main .about {
-    background: linear-gradient(180deg, rgb(58, 57, 57) 0%, rgba(36, 14, 165, 0.73) 90%, rgb(59, 107, 209) 100%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 30px 0px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
-    padding: 8px 12px;
-    color: white;
-    z-index: 2;  
-}
-h1 {
-    text-align: center;
-    padding: 5px;
-    margin: 0px 0px 10px 0px;
-    font-size: 1.5em;
-    color: white;
-    z-index: 2;
-}
-p { 
-    line-height: 2em;
-    font-size: 1em;
-}
-#proj-tit {
-    margin: 0px 50px;
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
-    font-weight: 400;
-    padding: 10px 25px;
-    z-index: 2;
-}
-.projects {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    padding: 10px 25px;
-    z-index: 2;
-}
-.projects a {
-    padding: 25px;
-    font-size: 1.3em;
-    text-align: center;
-    z-index: 2;
-}
-a {
-	text-decoration: none;	
-}
-a:link, a:visited {
-	color: white;
-}
-.projects a:hover {
-	transform: scale(1.2);
-    transition: 0.2s;
-}
-#container a {
-    margin: 25px; 
-    z-index: 2;
-    background: linear-gradient(180deg, rgb(58, 57, 57) 0%, rgba(252, 252, 252, 0.73) 90%, rgb(59, 107, 209) 100%);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 30px 0px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(250, 249, 249, 0.37);
-    padding: 8px 12px; 
-}
-.botton {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    padding:1.5px;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(35,5,39,0.7299890350877193) 76%, rgba(140,59,209,1) 100%);
-    z-index: 2;
-}
-.botton h2 {
-    color: white;
-    text-align: center;
-    font-size: 0.7em;
-    z-index: 2;
-}

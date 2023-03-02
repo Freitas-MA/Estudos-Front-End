@@ -60,5 +60,8 @@ html {
     #read-more2 {
         display: none;
     }
+    .d-md-none {
+        display: none;
+    }
 }
 

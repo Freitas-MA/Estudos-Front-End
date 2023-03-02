@@ -43,3 +43,22 @@ html {
 .carousel-inner {
     border-radius: 15px;
 }
+@media (min-width: 768px )
+{
+    #filters
+    {
+        display: block;
+    }
+    #read-more {
+        display: none;
+        border-radius: 5px;
+    }
+    #filters2
+    {
+        display: block;
+    }
+    #read-more2 {
+        display: none;
+    }
+}
+

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     
     <link rel="stylesheet" href="./src/css/style.css">
-
+    
     <title>Marcos Freitas</title>
   </head>
   <body class="bg-dark text-light px-4">
@@ -125,10 +125,18 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
-            <div class="mt-5 mx-3">
+            <div class="mt-5 mx-3 text-justify">
               <h3>HTML and CSS Projects </h3>
               <h4>No frameworks</h4>
-              <p>The main difference between a pure CSS project and a Bootstrap project is the way in which the project is structured. A pure CSS project is usually a single HTML file with all of the project's CSS code written directly into the HTML file. A Bootstrap project, on the other hand, uses predefined CSS classes and JavaScript functions to create a responsive design, meaning the HTML and CSS can be separated into different files. Additionally, Bootstrap provides a grid system and a range of components to help with the design and development of a project, while a pure CSS project does not.</p>
+              
+              <button type="button" id="read-more"
+                data-toggle="collapse" 
+                data-target="#filters" 
+                class="visible-xs visible-sm collapsed btn btn-secondary">Read More</button>
+
+              <div id="filters" class="collapse">
+                <p>The main difference between a pure CSS project and a Bootstrap project is the way in which the project is structured. A pure CSS project is usually a single HTML file with all of the project's CSS code written directly into the HTML file. A Bootstrap project, on the other hand, uses predefined CSS classes and JavaScript functions to create a responsive design, meaning the HTML and CSS can be separated into different files. Additionally, Bootstrap provides a grid system and a range of components to help with the design and development of a project, while a pure CSS project does not.</p>
+              </div>
             </div>
           </div>
           <div class="col-md p-5">
@@ -162,14 +170,22 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
-            <div class="mt-5 mx-3">
+            <div class="mt-5 mx-3 text-justify">
               <h3>Bootstrap Projects</h3>
               <h4>With a framework</h4>
-              <p>A bootstrap project is a project that is self-funded and managed by its founders or owners, with minimal outside funding or support. The benefits of using bootstrap technology for a project include the ability to develop a project faster and with fewer resources than traditional approaches, as well as the ability to focus on the core product, instead of having to worry about outside partners or investors. Bootstrap projects also have the advantage of allowing the founders or owners to maintain control over the product and its future, as well as the ability to quickly pivot or change direction in response to customer feedback or changing market conditions.</p>
+              <br>
+              <button type="button" id="read-more2"
+                data-toggle="collapse" 
+                data-target="#filters2" 
+                class="visible-xs visible-sm collapsed btn btn-secondary">Read More</button>
+
+              <div id="filters2" class="collapse">
+                <p>The main difference between a pure CSS project and a Bootstrap project is the way in which the project is structured. A pure CSS project is usually a single HTML file with all of the project's CSS code written directly into the HTML file. A Bootstrap project, on the other hand, uses predefined CSS classes and JavaScript functions to create a responsive design, meaning the HTML and CSS can be separated into different files. Additionally, Bootstrap provides a grid system and a range of components to help with the design and development of a project, while a pure CSS project does not.</p>
+              </div>
             </div>
           </div>
         </div>
-        // TODO Continuar a adicionar coisas
+       
       </section>
     </main>
 

@@ -11,15 +11,58 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <title>Olá, mundo!</title>
+    <title>123</title>
   </head>
   <body>
     <br>
     <br>
+    <div class="row">
+      <div class="col-3 pl-5">
+        <div>
+          <input type="text" name="list" id="objeto">
+          <button onclick="insercao()">Adicionar</button>
+          <button onclick="ordenacao()">Ordenar</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col border w-50 h-50 mx-5" id="output-list">
+        <br><br><br>
+      </div>
+    </div>
+
+
+
     <br>
 
     <!-- JavaScript (Opcional) -->
-    <script src="./src/css/script.js"></script>
+    <script>
+     var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+      function insercao (listaObjetos, inserir)    {
+        var objeto = document.getElementById('objeto').value 
+
+        if(objeto != '') {
+          if(objetos.indexOf(objeto) !== -1) {
+            alert('Objeto ja inserido!')
+          } else {
+            objetos.push(objeto)
+            console.log(objetos)
+
+            document.getElementById('objeto').value = ''
+          }
+        }
+        else {
+          alert('Informe um objeto valido')
+        }
+      }
+
+      function ordenacao() {
+        objetos.sort()
+        console.log(objetos)
+      }
+
+
+    </script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

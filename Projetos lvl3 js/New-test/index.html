@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background com DNA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        html,
+        body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        }
+
+        #dna-background {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        overflow: hidden;
+        }
+
+        #dna-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        }
+
+    </style>
+</head>
+<body>
+	<div id="dna-background">
+		<img id="dna-image" src="./DNA_orbit_animated.gif" alt="DNA Orbitando">
+	</div>
+
+	<script>
+        // Obtém o elemento da imagem de DNA
+        var dnaImage = document.getElementById("dna-image");
+
+        // Obtém a largura e a altura da imagem de DNA
+        var dnaImageWidth = dnaImage.width;
+        var dnaImageHeight = dnaImage.height;
+
+        // Obtém a largura e a altura da janela do navegador
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+
+        // Define a posição inicial da imagem de DNA de forma aleatória
+        dnaImage.style.top = Math.floor(Math.random() * windowHeight) + "px";
+        dnaImage.style.left = Math.floor(Math.random() * windowWidth) + "px";
+
+        // Define o deslocamento horizontal e vertical da imagem de DNA de forma aleatória
+        var horizontalDirection = Math.floor(Math.random() * 2) === 0 ? -1 : 1;
+        var verticalDirection = Math.floor(Math.random() * 2) === 0 ? -1 : 1;
+        var horizontalSpeed = Math.floor(Math.random() * 10) + 1;
+        var verticalSpeed = Math.floor(Math.random() * 10) + 1;
+
+        // Move a imagem de DNA aleatoriamente pela janela do navegador
+        function moveDnaImage() {
+        // Obtém a posição atual da imagem de DNA
+        var currentTop = parseInt(dnaImage.style.top);
+        var currentLeft = parseInt(dnaImage.style.left);
+
+        // Calcula a nova posição da imagem de DNA
+        var newTop = currentTop + (verticalSpeed * verticalDirection);
+        var newLeft = currentLeft + (horizontalSpeed * horizontalDirection);
+
+        // Verifica se a imagem de DNA está dentro dos limites da janela do navegador
+        if (newTop < 0) {
+            newTop = 0;
+            verticalDirection = 1;
+        } else if (newTop > (windowHeight - dnaImageHeight)) {
+            newTop = windowHeight - dnaImageHeight;
+            verticalDirection = -1;
+        }
+        if (newLeft < 0) {
+            newLeft = 0;
+            horizontalDirection = 1;
+        } else if (newLeft > (windowWidth - dnaImageWidth)) {
+            newLeft = windowWidth - dnaImageWidth;
+            horizontalDirection = -1;
+        }
+
+        // Define a nova posição da imagem de DNA
+        dnaImage.style.top = newTop + "px";
+        dnaImage.style.left = newLeft + "px";
+
+        // Aguarda
+
+    </script>
+</body>
+</html>

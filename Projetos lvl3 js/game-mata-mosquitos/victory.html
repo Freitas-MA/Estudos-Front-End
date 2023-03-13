@@ -16,29 +16,27 @@
     <title>Olá, mundo!</title>
   </head>
   <body onresize="ajustaTamanhoPalcoJogo()">
-
-   <div class="painel">
-      <div class="vidas">
-        <img id="v1" src="./src/image/coracao_cheio.png" alt="vidaV">
-        <img id="v2" src="./src/image/coracao_cheio.png" alt="vidaC">
-        <img id="v3" src="./src/image/coracao_cheio.png" alt="vidaC">
-      </div>
-      <div class="cronometro">
-        Tempo restante: <span id="cronometro"></span>
-      </div>
-   </div>
-
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img id="game-over" class="img-fluid" src="./src/image/vitoria.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                       <button onclick="window.location.href ='index.html' " type="button" class="btn btn-dark btn-lg">Restart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     <!-- JavaScript (Opcional) -->
-    <script src="Script.js"></script>
-    <script>
-      document.getElementById('cronometro').innerHTML = tempo
-      posicaoRandomica()
-      setInterval(function() {
-        posicaoRandomica()
-      }, 2000)
-    </script>
+    
+    
 
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

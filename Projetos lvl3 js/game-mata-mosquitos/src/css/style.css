@@ -33,7 +33,10 @@ body {
     bottom: 0px;
     left: 0px;
     border-top: solid #fff;
+    background-color: #fff;
     opacity: 0.7;
+    border-radius: 0px 10px 0px 0px;
+    z-index: 10;
 }
 .vidas {
     float: left;
@@ -42,4 +45,7 @@ body {
     float: left;
     font-size: 20px;
     font-weight: bold;
+}
+#game-over {
+    width: 40%;
 }
